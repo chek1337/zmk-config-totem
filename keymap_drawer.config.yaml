@@ -1,0 +1,383 @@
+parse_config:
+  zmk_remove_keycode_prefix:
+    - "RU_"
+    - "EN_"
+
+  zmk_combos:
+    cmben: {align: top, offset: 0.2}
+    cmbru: {align: top, offset: 0.2}
+    capslock_one_word: {align: top, offset: 0.2}
+    caps: {align: bottom, offset: 0.00}
+    ctrl_shift_v_ru: {align: bottom, offset: 0.5}
+    ctrl_shift_v_en: {align: bottom, offset: 0.5}
+    ctrl_shift_c_ru: {align: bottom, offset: 0.0}
+    ctrl_shift_c_en: {align: bottom, offset: 0.0}
+
+  raw_binding_map:
+    "&none": {type: ghost}
+    "&bootloader": {tap: $$mdi:progress-download$$}
+    "&studio_unlock": {tap: $$mdi:lock-open$$}
+    "&en GRAVE":        {tap: "`", hold: en}
+    "&en LESS_THAN":    {tap: "<", hold: en}
+    "&en GREATER_THAN": {tap: ">", hold: en}
+    "&en SQT":          {tap: "'", hold: en}
+    "&en TILDE":        {tap: "~", hold: en}
+    "&en AMPERSAND":    {tap: "&", hold: en}
+    "&en LEFT_BRACE":   {tap: "{", hold: en}
+    "&en RIGHT_BRACE":  {tap: "}", hold: en}
+    "&en HASH":         {tap: "#", hold: en}
+    "&en PIPE":         {tap: "|", hold: en}
+    "&en AT":           {tap: "@", hold: en}
+    "&en DOLLAR":       {tap: "$", hold: en}
+    "&en LBKT":         {tap: "[", hold: en}
+    "&en RBKT":         {tap: "]", hold: en}
+    "&en SEMICOLON":    {tap: ";", hold: en}
+    "&en COLON":        {tap: ":", hold: en}
+    "&en COMMA":        {tap: ",", hold: en}
+    "&en CARET":        {tap: "^", hold: en}
+    "&en DOT":          {tap: ".", hold: en}
+    "&en LS(LC(V))":    {tap: $$mdi:content-paste$$, hold: en}
+    "&en LS(LC(C))":    {tap: $$mdi:content-copy$$, hold: en}
+    "&kp LS(LC(V))": $$mdi:content-paste$$
+    "&kp LS(LC(C))": $$mdi:content-copy$$
+    "&kp RS(ENTER)":  {tap: $$mdi:keyboard-return$$,          hold: $$mdi:apple-keyboard-shift$$}
+    "&kp RC(DELETE)": {tap: $$mdi:backspace-reverse-outline$$, hold: $$mdi:apple-keyboard-control$$}
+    "&kp RC(BSPC)":   {tap: $$mdi:backspace$$,                hold: $$mdi:apple-keyboard-control$$, type: backspace}
+    "&kp RC(LEFT)":      {tap: $$mdi:arrow-left-bold$$,  hold: $$mdi:apple-keyboard-control$$}
+    "&kp RC(DOWN)":      {tap: $$mdi:arrow-down-bold$$,  hold: $$mdi:apple-keyboard-control$$}
+    "&kp RC(UP)":        {tap: $$mdi:arrow-up-bold$$,    hold: $$mdi:apple-keyboard-control$$}
+    "&kp RC(RIGHT)":     {tap: $$mdi:arrow-right-bold$$, hold: $$mdi:apple-keyboard-control$$}
+    "&kp RS(RC(LEFT))":  {tap: $$mdi:arrow-left-bold$$,  hold: $$mdi:apple-keyboard-control$$, shifted: $$mdi:apple-keyboard-shift$$}
+    "&kp RC(RS(DOWN))":  {tap: $$mdi:arrow-down-bold$$,  hold: $$mdi:apple-keyboard-control$$, shifted: $$mdi:apple-keyboard-shift$$}
+    "&kp RC(RS(UP))":    {tap: $$mdi:arrow-up-bold$$,    hold: $$mdi:apple-keyboard-control$$, shifted: $$mdi:apple-keyboard-shift$$}
+    "&kp RC(RS(RIGHT))": {tap: $$mdi:arrow-right-bold$$, hold: $$mdi:apple-keyboard-control$$, shifted: $$mdi:apple-keyboard-shift$$}
+    "&layer_en": {tap: $$mdi:translate$$, hold: en}
+    "&layer_ru": {tap: $$mdi:translate$$, hold: ru}
+    "&caps_word": $$mdi:caps-lock$$
+
+  zmk_keycode_map:
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: $$mdi:transfer-up$$
+    PG_DN: $$mdi:transfer-down$$
+    PAGE_UP: $$mdi:transfer-up$$
+    PAGE_DOWN: $$mdi:transfer-down$$
+    HOME: $$mdi:arrow-collapse-left$$
+    END: $$mdi:arrow-collapse-right$$
+
+    SPACE: $$mdi:keyboard-space$$
+    TAB: $$mdi:keyboard-tab$$
+    ENTER: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    ESCAPE: $$mdi:keyboard-esc$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+
+    CAPS: $$mdi:apple-keyboard-caps$$
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    PRINTSCREEN: $$mdi:printer$$
+    PSCRN: $$mdi:printer$$
+
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+    OUT_BLE: $$mdi:bluetooth$$
+    OUT_USB: $$mdi:usb$$
+
+    CYRILLIC_A: А
+    CYRILLIC_BE: Б
+    CYRILLIC_VE: В
+    CYRILLIC_GHE: Г
+    CYRILLIC_DE: Д
+    CYRILLIC_IE: Е
+    CYRILLIC_IO: Ё
+    CYRILLIC_ZHE: Ж
+    CYRILLIC_ZE: З
+    CYRILLIC_I: И
+    CYRILLIC_SHORT_I: Й
+    CYRILLIC_KA: К
+    CYRILLIC_EL: Л
+    CYRILLIC_EM: М
+    CYRILLIC_EN: Н
+    CYRILLIC_O: О
+    CYRILLIC_PE: П
+    CYRILLIC_ER: Р
+    CYRILLIC_ES: С
+    CYRILLIC_TE: Т
+    CYRILLIC_U: У
+    CYRILLIC_EF: Ф
+    CYRILLIC_HA: Х
+    CYRILLIC_TSE: Ц
+    CYRILLIC_CHE: Ч
+    CYRILLIC_SHA: Ш
+    CYRILLIC_SHCHA: Щ
+    CYRILLIC_HARD_SIGN: Ъ
+    CYRILLIC_YERU: Ы
+    CYRILLIC_SOFT_SIGN: Ь
+    CYRILLIC_E: Э
+    CYRILLIC_YU: Ю
+    CYRILLIC_YA: Я
+
+    DQT: '"'
+    SQT: "'"
+    FSLH: "/"
+    BACKSLASH: "\\"
+    QMARK: "?"
+    COMMA: ","
+    DOT: "."
+    EXCL: "!"
+    PRCNT: "%"
+    LPAR: "("
+    RPAR: ")"
+    LBKT: "["
+    RBKT: "]"
+    UNDER: _
+    EQUAL: "="
+    MINUS: "-"
+    PLUS: "+"
+    ASTERISK: "*"
+    AMPERSAND: "&"
+    DOLLAR: $
+    AT: "@"
+    HASH: "#"
+    PIPE: "|"
+    CARET: "^"
+    TILDE: "~"
+    GRAVE: "`"
+    LESS_THAN: <
+    GREATER_THAN: ">"
+    LEFT_BRACE: "{"
+    RIGHT_BRACE: "}"
+    COLON: ":"
+    SEMICOLON:
+      tap: ";"
+      shifted: ":"
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    APOS:
+      tap: "'"
+      shifted: '"'
+
+draw_config:
+  draw_key_sides: false
+
+  key_h: 64
+  key_rx: 4
+  key_ry: 4
+
+  line_spacing: 1
+
+  combo_w: 30
+  combo_h: 30
+
+  small_pad: 4
+
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 0
+  outer_pad_h: 40
+
+  append_colon_to_layer_header: false
+  shrink_wide_legends: 5
+
+  glyph_tap_size: 22
+  glyph_hold_size: 16
+  glyph_shifted_size: 16
+
+  svg_style: |
+    svg path {
+        fill: inherit;
+    }
+
+    svg.keymap {
+        /* GitHub Primer neutrals (canvas / border / fg) */
+        --color--material--blue-gray--50: #f6f8fa;
+        --color--material--blue-gray--100: #eaeef2;
+        --color--material--blue-gray--200: #d0d7de;
+        --color--material--blue-gray--300: #afb8c1;
+        --color--material--blue-gray--400: #656d76;
+        --color--material--blue-gray--500: #57606a;
+        --color--material--blue-gray--600: #424a53;
+        --color--material--blue-gray--700: #32383f;
+        --color--material--blue-gray--800: #24292f;
+        --color--material--blue-gray--900: #1f2328;
+
+        /* GitHub Primer accent blue (replaces teal accent for F/J) */
+        --color--material--teal--50: #ddf4ff;
+        --color--material--teal--100: #b6e3ff;
+        --color--material--teal--200: #80ccff;
+        --color--material--teal--300: #54aeff;
+        --color--material--teal--400: #218bff;
+        --color--material--teal--500: #0969da;
+
+        --color--bg: transparent;
+        --color--text: var(--color--material--blue-gray--900);
+
+        --color--layer--text: var(--color--material--blue-gray--400);
+
+        --color--key--bg: var(--color--material--blue-gray--50);
+        --color--key--border: white;
+        --color--key--text--tap: var(--color--text);
+        --color--key--text--shifted: var(--color--material--blue-gray--400);
+        --color--key--text--hold: var(--color--material--blue-gray--400);
+
+        --color--combo--bg: var(--color--material--blue-gray--100);
+        --color--combo--border: var(--color--combo--bg);
+        --color--combo--dendron: var(--color--material--blue-gray--400);
+        --color--combo--text--tap: var(--color--material--blue-gray--800);
+        --color--combo--text--shifted: var(--color--material--blue-gray--400);
+        --color--combo--text--hold: var(--color--combo--text--tap);
+
+        font-family: system-ui, "Noto Sans", "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: var(--color--text);
+        background-color: var(--color--bg);
+    }
+
+    rect,
+    path {
+      shape-rendering: geometricPrecision;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+        line-height: 1;
+    }
+
+    text.label {
+        font-size: 32px;
+        text-anchor: start;
+        paint-order: stroke;
+        fill: var(--color--layer--text);
+    }
+
+    rect.key,
+    rect.combo {
+        fill: var(--color--key--bg);
+        stroke: var(--color--key--border);
+    }
+    .tap {
+      fill: var(--color--key--text--tap);
+    }
+    .shifted,
+    .hold {
+        font-size: 14px;
+        text-anchor: middle;
+    }
+    .shifted {
+        dominant-baseline: hanging;
+        fill: var(--color--key--text--shifted);
+        translate: 22px 2px;
+    }
+    .hold {
+        dominant-baseline: ideographic;
+        fill: var(--color--key--text--hold);
+        translate: 22px 4px;
+    }
+
+    /* Mirror shifted/hold labels to the left side for the left half of the keyboard */
+    .keypos-0 .shifted,  .keypos-1 .shifted,  .keypos-2 .shifted,
+    .keypos-3 .shifted,  .keypos-4 .shifted,
+    .keypos-10 .shifted, .keypos-11 .shifted, .keypos-12 .shifted,
+    .keypos-13 .shifted, .keypos-14 .shifted,
+    .keypos-20 .shifted, .keypos-21 .shifted, .keypos-22 .shifted,
+    .keypos-23 .shifted, .keypos-24 .shifted, .keypos-25 .shifted,
+    .keypos-32 .shifted, .keypos-33 .shifted, .keypos-34 .shifted {
+        translate: -22px 2px;
+    }
+
+    .keypos-0 .hold,  .keypos-1 .hold,  .keypos-2 .hold,
+    .keypos-3 .hold,  .keypos-4 .hold,
+    .keypos-10 .hold, .keypos-11 .hold, .keypos-12 .hold,
+    .keypos-13 .hold, .keypos-14 .hold,
+    .keypos-20 .hold, .keypos-21 .hold, .keypos-22 .hold,
+    .keypos-23 .hold, .keypos-24 .hold, .keypos-25 .hold,
+    .keypos-32 .hold, .keypos-33 .hold, .keypos-34 .hold {
+        translate: -22px 4px;
+    }
+
+    /* Accent F (pos 13) and J (pos 16) — home-row index */
+    .keypos-13 .key,
+    .keypos-16 .key {
+        --color--key--bg: var(--color--material--teal--200);
+        --color--key--border: var(--color--material--teal--100);
+        --color--key--text--shifted: var(--color--key--text--tap);
+        --color--key--text--hold: var(--color--key--text--tap);
+    }
+
+    /* Active thumb keys (3 left + 2 right). Pos 37 is &none — keep default. */
+    .keypos-32 .key, .keypos-33 .key, .keypos-34 .key,
+    .keypos-35 .key, .keypos-36 .key {
+        --color--key--bg: var(--color--material--blue-gray--100);
+        --color--key--border: var(--color--material--blue-gray--50);
+    }
+
+    .combo {
+      --color--key--bg: var(--color--combo--bg);
+      --color--key--border: var(--color--combo--border);
+      --color--key--text--tap: var(--color--combo--text--tap);
+      --color--key--text--shifted: var(--color--combo--text--shifted);
+      --color--key--text--hold: var(--color--combo--text--hold);
+    }
+    rect.combo {
+      opacity: 0.8;
+      stroke-width: 0;
+    }
+    path.combo {
+      stroke-width: 1;
+      stroke: var(--color--combo--dendron);
+      fill: none;
+      opacity: 0.5;
+    }
+    .combo.tap {
+      font-size: 14px;
+    }
+    .combo.shifted {
+      font-size: 11px;
+    }
+    .combo.hold {
+      font-size: 14px;
+    }
+
+    .trans,
+    .none,
+    .ghost {
+      opacity: 0.4;
+    }
