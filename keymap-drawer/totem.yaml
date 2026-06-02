@@ -226,7 +226,7 @@ layers:
   - {t: ., h: en}
   - Х
   - Ъ
-  - {type: ghost}
+  - Ё
   - {type: ghost}
   - {type: ghost}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
