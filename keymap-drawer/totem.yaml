@@ -162,7 +162,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&mkp RCLK'
+  - $$mdi:mouse-right-click$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:backspace-reverse-outline$$
@@ -172,7 +172,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '&mkp LCLK'
+  - $$mdi:mouse-left-click$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -201,7 +201,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&mkp RCLK'
+  - $$mdi:mouse-right-click$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:backspace-reverse-outline$$
@@ -211,7 +211,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '&mkp LCLK'
+  - $$mdi:mouse-left-click$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
