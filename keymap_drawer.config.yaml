@@ -342,7 +342,7 @@ draw_config:
         --color--key--text--hold: var(--color--key--text--tap);
     }
 
-    /* Active thumb keys (3 left + 2 right). Pos 37 is &none — keep default. */
+    /* Active thumb keys (3 left + 2 right). Pos 37 is none — keep default. */
     .keypos-32 .key, .keypos-33 .key, .keypos-34 .key,
     .keypos-35 .key, .keypos-36 .key {
         --color--key--bg: var(--color--material--blue-gray--100);
