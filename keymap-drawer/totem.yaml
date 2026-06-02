@@ -1,0 +1,361 @@
+layout: {zmk_keyboard: totem}
+layers:
+  En:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {type: ghost}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: P, h: '$$mdi:apple-keyboard-command$$'}
+  - {type: ghost}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - '['
+  - ']'
+  - {type: ghost}
+  - F13
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
+  - ArrowsFs
+  - SymEn
+  - NumNavEn
+  - {type: ghost}
+  Ru:
+  - Й
+  - Ц
+  - У
+  - К
+  - Е
+  - Н
+  - Г
+  - Ш
+  - Щ
+  - {type: ghost}
+  - {t: Ф, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: Ы, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: В, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: А, h: '$$mdi:apple-keyboard-control$$'}
+  - П
+  - Р
+  - {t: О, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Л, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Д, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Ж, h: '$$mdi:apple-keyboard-command$$'}
+  - {type: ghost}
+  - Я
+  - Ч
+  - С
+  - М
+  - И
+  - Т
+  - Ь
+  - Б
+  - Ю
+  - Э
+  - F13
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
+  - ArrowsFs
+  - SymRu
+  - NumNavRu
+  - {type: ghost}
+  SymEn:
+  - '`'
+  - <
+  - '>'
+  - '"'
+  - ''''
+  - '&'
+  - '~'
+  - '{'
+  - '}'
+  - '#'
+  - '!'
+  - /
+  - '-'
+  - '='
+  - '|'
+  - '%'
+  - _
+  - (
+  - )
+  - '?'
+  - {type: ghost}
+  - \
+  - '*'
+  - +
+  - '@'
+  - $
+  - ','
+  - .
+  - '['
+  - ']'
+  - ^
+  - {type: ghost}
+  - {t: ;, s: ':'}
+  - ':'
+  - Control
+  - {type: held}
+  - {type: ghost}
+  - {type: ghost}
+  SymRu:
+  - {t: '`', h: en}
+  - {t: <, h: en}
+  - {t: '>', h: en}
+  - '"'
+  - {t: '''', h: en}
+  - {t: '&', h: en}
+  - {t: '~', h: en}
+  - {t: '{', h: en}
+  - {t: '}', h: en}
+  - {t: '#', h: en}
+  - '!'
+  - /
+  - '-'
+  - '='
+  - {t: '|', h: en}
+  - '%'
+  - _
+  - (
+  - )
+  - '?'
+  - {type: ghost}
+  - \
+  - '*'
+  - +
+  - {t: '@', h: en}
+  - {t: $, h: en}
+  - ','
+  - .
+  - {t: '[', h: en}
+  - {t: ']', h: en}
+  - {t: ^, h: en}
+  - {type: ghost}
+  - {t: ;, h: en}
+  - {t: ':', h: en}
+  - Control
+  - {type: held}
+  - {type: ghost}
+  - {type: ghost}
+  NumNavEn:
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {type: ghost}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:printer$$
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {type: ghost}
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - {type: ghost}
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
+  - $$mdi:arrow-collapse-left$$
+  - $$mdi:arrow-collapse-right$$
+  - $$mdi:keyboard-esc$$
+  - ','
+  - .
+  - '['
+  - ']'
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: held}
+  - {type: ghost}
+  NumNavRu:
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {type: ghost}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:printer$$
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {type: ghost}
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - {type: ghost}
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
+  - $$mdi:arrow-collapse-left$$
+  - $$mdi:arrow-collapse-right$$
+  - $$mdi:keyboard-esc$$
+  - {t: ',', h: en}
+  - {t: ., h: en}
+  - Х
+  - Ъ
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: held}
+  - {type: ghost}
+  ArrowsFs:
+  - F1
+  - F2
+  - F3
+  - F4
+  - {type: ghost}
+  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$', s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$', s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-control$$', s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$', s: '$$mdi:apple-keyboard-shift$$'}
+  - {type: ghost}
+  - F5
+  - F6
+  - F7
+  - F8
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {type: ghost}
+  - {type: ghost}
+  - F9
+  - F10
+  - F11
+  - F12
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: held}
+  - Control
+  - {type: ghost}
+  - {type: ghost}
+  Control:
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - OUT BLE
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
+  - $$mdi:printer$$
+  - $$mdi:progress-download$$
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - {type: ghost}
+  - OUT USB
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - $$mdi:lock-open$$
+  - $$mdi:bluetooth-off$$
+  - {type: ghost}
+  - {type: ghost}
+  - {type: held}
+  - {type: held}
+  - {type: ghost}
+  - {type: ghost}
+combos:
+- p: [2, 3]
+  k: {t: '$$mdi:translate$$', h: en}
+  l: [Ru]
+  a: top
+  o: 0.2
+- p: [3, 2]
+  k: {t: '$$mdi:translate$$', h: ru}
+  l: [En]
+  a: top
+  o: 0.2
+- p: [33, 13]
+  k: Ctl+$$mdi:keyboard-space$$
+  l: [Ru, En]
+- p: [24, 21]
+  k: {t: '$$mdi:content-paste$$', h: en}
+  l: [Ru]
+  a: bottom
+  o: 0.5
+- p: [21, 24]
+  k: $$mdi:content-paste$$
+  l: [En]
+  a: bottom
+  o: 0.5
+- p: [21, 23]
+  k: {t: '$$mdi:content-copy$$', h: en}
+  l: [Ru]
+  a: bottom
+- p: [21, 23]
+  k: $$mdi:content-copy$$
+  l: [En]
+  a: bottom
+- p: [11, 32]
+  k: Alt+$$mdi:keyboard-tab$$
+  l: [En, Ru]
+- p: [16, 18]
+  k: $$mdi:caps-lock$$
+  l: [En, Ru]
+  a: top
+  o: 0.2
+- p: [16, 19]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [En, Ru]
+  a: bottom
+- p: [12, 33]
+  k: Ctl+W
+  l: [En, Ru]
