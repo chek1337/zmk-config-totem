@@ -54,6 +54,12 @@ parse_config:
     "&layer_en": {tap: $$mdi:translate$$, hold: en}
     "&layer_ru": {tap: $$mdi:translate$$, hold: ru}
     "&caps_word": $$mdi:caps-lock$$
+    "&mkp LCLK": $$mdi:mouse-left-click$$
+    "&mkp RCLK": $$mdi:mouse-right-click$$
+    "&mkp MCLK": $$mdi:mouse-scroll-wheel$$
+    "&mkp MB1": $$mdi:mouse-left-click$$
+    "&mkp MB2": $$mdi:mouse-right-click$$
+    "&mkp MB3": $$mdi:mouse-scroll-wheel$$
 
   zmk_keycode_map:
     LSHIFT: $$mdi:apple-keyboard-shift$$
