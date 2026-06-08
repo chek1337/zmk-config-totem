@@ -525,8 +525,9 @@ path.combo {
 <rect rx="4" ry="4" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="0" class="key tap">Щ</text>
 </g>
-<g transform="translate(930, 134) rotate(10.0)" class="key ghost keypos-9">
-<rect rx="4" ry="4" x="-30" y="-30" width="60" height="60" class="key ghost"/>
+<g transform="translate(930, 134) rotate(10.0)" class="key keypos-9">
+<rect rx="4" ry="4" x="-30" y="-30" width="60" height="60" class="key"/>
+<text x="0" y="0" class="key tap">З</text>
 </g>
 <g transform="translate(95, 186) rotate(-10.0)" class="key keypos-10">
 <rect rx="4" ry="4" x="-30" y="-30" width="60" height="60" class="key"/>

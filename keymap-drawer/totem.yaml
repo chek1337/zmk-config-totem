@@ -49,7 +49,7 @@ layers:
   - Г
   - Ш
   - Щ
-  - {type: ghost}
+  - З
   - {t: Ф, h: '$$mdi:apple-keyboard-command$$'}
   - {t: Ы, h: '$$mdi:apple-keyboard-option$$'}
   - {t: В, h: '$$mdi:apple-keyboard-shift$$'}
